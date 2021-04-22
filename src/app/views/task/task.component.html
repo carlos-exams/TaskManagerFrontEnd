@@ -23,9 +23,10 @@
           <th style="width: 3rem">
               <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
           </th>
-          <th pSortableColumn="id">id <p-sortIcon field="price"></p-sortIcon></th>
+          <th pSortableColumn="id">id <p-sortIcon field="id"></p-sortIcon></th>
           <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
-          <th pSortableColumn="description">Description <p-sortIcon field="category"></p-sortIcon></th>
+          <th pSortableColumn="description">Description <p-sortIcon field="description"></p-sortIcon></th>
+          <th pSortableColumn="status">Status <p-sortIcon field="status"></p-sortIcon></th>
           <th></th>
       </tr>
   </ng-template>
@@ -37,6 +38,7 @@
           <td>{{task.id}}</td>
           <td>{{task.name}}</td>
           <td>{{task.description}}</td>
+          <td>{{task.statusName}}</td>
       </tr>
   </ng-template>
   <ng-template pTemplate="summary">
