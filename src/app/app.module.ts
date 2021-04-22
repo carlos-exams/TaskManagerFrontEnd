@@ -7,6 +7,7 @@ import { TaskModule } from './views/task/task.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
 import { ToolbarModule} from 'primeng/toolbar';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolbarModule} from 'primeng/toolbar';
     TaskModule,
     HttpClientModule,
     TableModule,
-    ToolbarModule
+    ToolbarModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
