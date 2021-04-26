@@ -5,9 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { TaskModule } from './views/task/task.module';
 import { HttpClientModule } from '@angular/common/http';
-import { TableModule } from 'primeng/table';
-import { ToolbarModule} from 'primeng/toolbar';
-import { ButtonModule } from 'primeng/button';
+import {MenubarModule} from 'primeng/menubar';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +17,8 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     TaskModule,
     HttpClientModule,
-    TableModule,
-    ToolbarModule,
-    ButtonModule
+    MenubarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
