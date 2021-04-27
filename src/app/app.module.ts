@@ -6,7 +6,7 @@ import { HeaderComponent } from './commons/header/header.component';
 import { TaskModule } from './views/task/task.module';
 import { HttpClientModule } from '@angular/common/http';
 import {MenubarModule} from 'primeng/menubar';
-
+import { TaskStatusService } from './services/taskStatus.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {MenubarModule} from 'primeng/menubar';
     MenubarModule
 
   ],
-  providers: [],
+  providers: [TaskStatusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

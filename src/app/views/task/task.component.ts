@@ -33,7 +33,7 @@ export class TaskComponent implements OnInit {
     this.getTasks();
     this.getTaskStatuses();
   }
-  
+
   getTasks(){
     this._taskService.getTaskList()
     .subscribe(
@@ -57,9 +57,8 @@ export class TaskComponent implements OnInit {
       });
   }
 
-  
   openNew() {
-    this.task = new Task();
+    this.task = new Task(null,null,null,null,null,null,null);
     this.selectedTaskStatus = null,
     this.submitted = false;
     this.taskDialog = true;

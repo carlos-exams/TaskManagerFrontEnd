@@ -1,9 +1,9 @@
-<p-toast style="margin-top: 30px;"></p-toast>
+<p-toast></p-toast>
 
 <div class="task">
   <p-toolbar styleClass="p-mb-4">
     <ng-template pTemplate="left">
-      <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success p-mr-2" (click)="openNew()"></button>
+      <button pButton pRipple label="New" id='NewTask' icon="pi pi-plus" class="p-button-success p-mr-2" (click)="openNew()"></button>
       <button pButton pRipple label="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedTasks()" [disabled]="!selectedTasks || !selectedTasks.length"></button>
     </ng-template>
   </p-toolbar>
@@ -55,7 +55,7 @@
   </p-table>
 </div>
 
-<p-dialog [(visible)]="taskDialog" [style]="{width: '500px', length: '500px'}" header="Task Details" [modal]="true" styleClass="p-fluid">
+<p-dialog [(visible)]="taskDialog" [style]="{width: '500px'}" header="Task Details" [modal]="true" styleClass="p-fluid">
     <ng-template pTemplate="content">
         <div class="p-grid">
             <div class="p-col-12">
